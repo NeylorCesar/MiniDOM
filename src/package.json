@@ -1,0 +1,10 @@
+{
+  "name": "minidom",
+  "version": "0.1.0",
+  "description": "A minimalist DOM manipulation library using TypeScript.",
+  "main": "src/minidom.ts",
+  "type": "module",
+  "keywords": ["dom", "typescript", "mini", "jquery", "library"],
+  "author": "Neylor Cesar",
+  "license": "MIT"
+}
