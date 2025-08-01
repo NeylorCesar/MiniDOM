@@ -2,14 +2,22 @@
   "name": "minidom",
   "version": "1.0.0",
   "description": "A minimalist DOM manipulation library using TypeScript.",
-  "main": "dist/minidom.js",
+  "main": "dist/minidom.umd.min.js",
   "types": "dist/minidom.d.ts",
   "type": "module",
-  "keywords": ["dom", "typescript", "mini", "jquery", "library"],
+  "keywords": [
+    "dom",
+    "typescript",
+    "mini",
+    "jquery",
+    "library"
+  ],
   "author": "Neylor Cesar",
   "license": "MIT",
   "scripts": {
-    "build": "bun build src/minidom.ts --outdir dist --target browser --minify --sourcemap"
+    "build:ts": "bun x tsc",
+    "build:umd": "mkdir -p dist && bun build src/minidom.ts --outfile=dist/minidom.umd.min.js --target=browser --minify --sourcemap --format=iife --global-name=MiniDOM",
+    "build": "bun run build:ts && bun run build:umd"
   },
   "devDependencies": {
     "typescript": "^5.4.0"
