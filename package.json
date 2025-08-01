@@ -1,5 +1,5 @@
 {
-  "name": "minidom",
+  "name": "ts-minidom",
   "version": "1.0.0",
   "description": "A minimalist DOM manipulation library using TypeScript.",
   "main": "dist/minidom.umd.min.js",

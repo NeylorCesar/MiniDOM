@@ -46,7 +46,10 @@ $all('.caixa').fadeIn();
 </script>
 ```
 
+## NPM
+https://www.npmjs.com/package/ts-minidom
+
 ## Licença
 
 MIT © Neylor Cesar
-https://github.com/NeylorCesar/MiniDOM
+https://github.com/NeylorCesar/ts-minidom
