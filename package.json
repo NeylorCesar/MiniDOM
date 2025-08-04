@@ -1,6 +1,6 @@
 {
   "name": "ts-minidom",
-  "version": "1.1.2",
+  "version": "1.1.0",
   "description": "A minimalist DOM manipulation library using TypeScript.",
   "main": "dist/minidom.umd.min.js",
   "module": "dist/minidom.js",
@@ -24,7 +24,8 @@
   "scripts": {
     "build:ts": "bun x tsc",
     "build:umd": "mkdir -p dist && bun build src/minidom.ts --outfile=dist/minidom.umd.min.js --target=browser --minify --sourcemap --format=iife --global-name=MiniDOM",
-    "build": "bun run build:ts && bun run build:umd"
+    "build": "bun run build:ts && bun run build:umd",
+    "release": "npm version patch && npm publish && git push && git push --tags"
   },
   "devDependencies": {
     "typescript": "^5.4.0"
