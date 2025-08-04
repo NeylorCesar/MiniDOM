@@ -298,7 +298,7 @@ class DomCollection {
  * @param selector - A CSS selector string.
  * @returns A DomElement instance.
  */
-export function $(selector: string): DomElement {
+function $(selector: string): DomElement {
   return new DomElement(selector);
 }
 
@@ -307,6 +307,9 @@ export function $(selector: string): DomElement {
  * @param selector - A CSS selector string.
  * @returns A DomCollection instance.
  */
-export function $all(selector: string): DomCollection {
+function $all(selector: string): DomCollection {
   return new DomCollection(selector);
 }
+
+// ES6 exports
+export { DomElement, DomCollection, $, $all };
