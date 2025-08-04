@@ -1,4 +1,4 @@
-# MiniDOM
+# ts-minidom
 
 Uma biblioteca minimalista de manipulação do DOM usando TypeScript. Inspirada no jQuery, moderna e leve.
 
@@ -22,15 +22,15 @@ Uma biblioteca minimalista de manipulação do DOM usando TypeScript. Inspirada 
 ## Instalação
 
 ```bash
-bun install minidom
+bun install ts-minidom
 # ou
-npm install minidom
+npm install ts-minidom
 ```
 
 ## Uso
 
 ```ts
-import { $, $all } from 'minidom';
+import { $, $all } from 'ts-minidom';
 
 $('#app').html('Olá Mundo').addClass('visivel');
 
@@ -40,16 +40,16 @@ $all('.caixa').fadeIn();
 ## CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/minidom@0.1.0/dist/minidom.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/ts-minidom@1.1.1/dist/minidom.umd.min.js"></script>
 <script>
   MiniDOM.$('#app').text('Olá via CDN!');
 </script>
 ```
 
 ## NPM
-https://www.npmjs.com/package/ts-minidom
+
+[https://www.npmjs.com/package/ts-minidom](https://www.npmjs.com/package/ts-minidom)
 
 ## Licença
 
-MIT © Neylor Cesar
-https://github.com/NeylorCesar/ts-minidom
+MIT © [Neylor Cesar](https://github.com/NeylorCesar)
