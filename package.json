@@ -1,10 +1,17 @@
 {
   "name": "ts-minidom",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A minimalist DOM manipulation library using TypeScript.",
   "main": "dist/minidom.umd.min.js",
+  "module": "dist/minidom.js",
   "types": "dist/minidom.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/minidom.js",
+      "require": "./dist/minidom.umd.min.js"
+    }
+  },
   "keywords": [
     "dom",
     "typescript",
